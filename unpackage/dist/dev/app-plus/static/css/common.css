@@ -1,0 +1,61 @@
+body {margin: 0;font: 14px/1 "微软雅黑";height: 100%;}
+h1,h2,h3,h4,h5,h6 {margin: 0;font-size: 100%;font-weight: normal;}
+p,dl,dd {margin: 0;}
+ul,ol {margin: 0;padding: 0;list-style: none;}
+strong,b {font-weight: normal;}
+em,i {font-style: normal;}
+a {text-decoration: none;color: #333;}
+img {vertical-align: bottom;border-style: none;}
+input {margin: 0;padding: 0;border: none;outline: none;}
+textarea {resize: none;overflow: auto;}
+.clearfix:after {content: "";display: block;clear: both;}
+
+uni-page-body{height: 100% !important;}
+.contentBox{height: 100%;}
+/* 整体添加背景 */
+.gray{background-color: #f2f2f2;}
+/* tab切换 */
+.tabBox{display: flex;flex-direction: row;height:44px;line-height: 44px;text-align: center;background-color: #fff;position: fixed;left: 0;right: 0;top:0;z-index: 999;}
+.tabBox .tabList {width: 0px;flex: 1;}
+.tabBox .tabList.tabListActive {color: #5a9af7;border-bottom: 2px solid #5A9AF7;}
+
+/* ----网报样式----- */
+.reimContent{width: 100%;box-sizing: border-box;padding:54px 14px 80px 14px;min-height: 100%;}
+.vertical{display: flex;flex-direction: column;}
+.horizontal{display: flex;flex-direction: row}
+.reimContent uni-picker{flex:1;height: 100%;}
+.reimContent .uni-input{box-sizing: border-box;padding: 0px 3px;}
+/* 小白块 */
+.smallItemBox{display: flex;-webkit-box-pack: center;-webkit-justify-content: center;justify-content: center;-webkit-box-align: center;-webkit-align-items: center;align-items: center;-webkit-box-orient: vertical;-webkit-box-direction: normal;-webkit-flex-direction: column;flex-direction: column;padding: 20px 0;background: #FFFFFF;border-bottom: 1px solid #cecbce;border-radius: 5px;margin-bottom: 11px; width: 100%;position: relative;}
+.smallItemBoxTitle{margin: 0 auto;font-size: 16px;font-weight: bold;margin-bottom: 11px;text-align: center;}
+.smallItemBoxContent{width: 100%;box-sizing: border-box;padding:0px 6px;}
+.smallItemBoxContent .itemBox{-webkit-box-align: center;-webkit-align-items: center;align-items: center;display: -webkit-box;display: -webkit-flex;display: flex;border: 1px solid #f7f3f7;margin-top: 2px;display: flex;-webkit-box-orient: horizontal;-webkit-box-direction: normal;-webkit-flex-direction: row;flex-direction: row;height: 36px;font-size: 14px;line-height: 36px;}
+.smallItemBoxContent .itemBox .leftMsg{width: 111px;display: inline-block;background-color: #eff3ff;display: flex;flex-direction: row;align-items: center;justify-content: flex-end;box-sizing: border-box;padding:0px 5px 0px 0px;}
+.smallItemBoxContent .itemBox .rightMsg{width: 0px;flex: 1;height: 100%;}
+.smallItemBoxContent .itemBox .rightMsg .uni-input-wrapper .uni-input-input{box-sizing: border-box;width: 100%;height: 100%;padding: 3px;font-size: 14px;}
+.smallItemBoxContent .itemBox .rightMsg .uni-input-wrapper .uni-input-input[disabled='disabled']{background:#e8e8e8;}
+.rightMsg uni-picker uni-view{box-sizing: border-box;padding: 0px 3px;}
+.smallItemBoxContent .memoBox{display: -webkit-box;display: -webkit-flex;display: flex;-webkit-box-orient: vertical;-webkit-box-direction: normal;-webkit-flex-direction: column;flex-direction: column;padding: 10px;box-sizing: border-box;background: #eff3ff;height: auto;}
+.smallItemBoxContent .itemBox .rightMsg .uni-input-wrapper .uni-input-input{box-sizing: border-box;width: 100%;height: 100%;padding: 3px;}
+.itemBoxTextareaTitle{margin: 0 auto;font-size: 14px;font-weight: bold;margin-bottom: 11px;text-align: center;}
+.itemBoxTextarea{background: #fff;width: 100%;box-sizing: border-box;padding: 10px 6px;}
+/* 底部按钮 */
+.bottomBox{position: fixed;left: 0;bottom: 0px;right: 0;height: 77px;background-color: #f7f3f7;z-index: 999;padding: 10px 14px 16px;width: 100%;box-sizing: border-box;}
+.bottomBox uni-button {display: inline-block;color: #fff;background-color: #5a96f7;width: 100%;}
+.tabCenter{display: -webkit-box !important;display: -webkit-flex !important;display: flex !important;-webkit-box-orient: horizontal;-webkit-box-direction: normal;-webkit-flex-direction: row;flex-direction: row;}
+.tabCenterBtn{flex:1;margin: 0px 20rpx;background-color: #5a96f7;color: white;display: flex;box-sizing: border-box;border-radius: 10px;align-items: center;justify-content: center;font-size: 16px;}
+.tabCenterBtn:first-child{margin-left: 0rpx;}
+.tabCenterBtn:last-child{margin-right: 0rpx;}
+/* 增加块/删除图标 */
+.addBox{position: fixed;right: 5%;bottom: 110px;width: 40px;height: 40px;}
+.addIcon{width: 100%;height: 100%;}
+.delateBox{width:30px;height:30px;position: absolute;right:5px;top:5px}
+.delIcon{width: 100%;height: 100%;}
+/* 明细带小三角的头部 */
+.detailList_title{display: flex;flex-direction: row;width: 100%;justify-content: space-between;font-size: 18px;box-sizing: border-box;padding:0 0 8px;font-size: 18px;align-items: flex-end;font-size: 15px;}
+.listtitle_left{flex: 1;width: 0px;}
+.listtitle_left uni-view{width: 100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height: 30px;}
+.listtitle_right{ white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:140px;display: flex;align-items: center;justify-content: flex-end;}
+/* 必填标志 */
+.mustIcon{color: red;}
+

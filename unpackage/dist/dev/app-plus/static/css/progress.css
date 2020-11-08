@@ -1,0 +1,160 @@
+/* 流程css */
+	.clearfix::after{
+			display: block;
+			clear: both;
+			content: "";
+	}
+	.container{
+		display: flex;
+		/* justify-content: center; */
+		align-items: center;
+		flex-direction: column;
+		width: 100vw;
+		height: 100vh;
+		color: #737373;
+		padding-bottom: 100rpx;
+	}
+	.mainBox{
+		display: flex;
+		/* justify-content: center; */
+		align-items: center;
+	}
+	/* 业务向导专用 start */
+	.mind{
+		color: #f19f3b;
+		margin-right: 18rpx;
+	}
+	.content{
+		padding:20rpx;
+		font: 36rpx/1.5 "微软雅黑";
+	}
+	.leftBox{
+		float: left;
+		margin-left: 25px;
+	}
+	.rightBox{
+		display: inline-block;
+		float: right;
+		margin-right: 20rpx;
+	}
+	.mainBox{
+		display: flex;
+		justify-content: center;
+		width: 100vw;
+	}
+	.serach{
+		margin-right: 20rpx;
+		width: 30rpx;
+		height: 30rpx;
+	}
+	.downArrow{	
+		width: 40rpx;		
+		margin-left: 20rpx;
+		vertical-align: middle;
+	}
+	.rightArrow{
+		width: 20rpx;
+		height: 30rpx;
+		margin-left: 20rpx;
+		vertical-align: middle;
+	}
+	.contentTit{
+		color: #7097c2;
+		text-decoration: underline;
+		margin-right: 10rpx;
+	}
+	/* 业务向导专用 end */
+	
+	.progressBox{
+		width: 80%;
+		margin-top: 40rpx;
+	}
+	.item{
+		/* min-height: 140rpx; */
+		border: 1px solid #d2d6d5;
+		border-left: 2px solid #d2d6d5;
+		font-size: 30rpx;
+	}
+	.statusBox{
+		position: relative;
+		line-height: 55rpx;
+	}
+	.statusBox_finish{
+		background-color: #effef7;
+	}
+	.statusBox_approving{
+		background-color: #feffef;
+	}
+	.statusBox_wait{
+		background-color: #f7eeef;
+	}
+	.item .num{
+		position: absolute;
+		left: -24rpx;
+		display: inline-block;
+		width: 48rpx;
+		height: 48rpx;
+		border-radius: 50%;	
+		color: #fff;
+		text-align: center;
+	}
+	.item .num_finish{
+		/* 已审批 */
+		background-color: #50bf8a;
+	}
+	.item .num_approving{
+		/* 审批中 */
+		background-color: #de9e61;
+	}
+	.item .num_wait{
+		/* 待审批 */
+		background-color: #a8a4a3;
+	}
+
+	.item .res{
+		float: left;
+		margin-left: 50rpx;
+	}
+	.item .status{
+		float: right;
+		margin-right: 20rpx;
+	}
+	.status_finish{
+		color: #50bf8a;
+	}
+	.status_approving{
+		color: #eea86d;
+	}
+	.status_wait{
+		color: #a8a4a3;
+	}
+	.item .people,.item .options{
+		display: flex;
+		justify-content: space-between;
+		margin-left: 20rpx;
+		font-size: 30rpx;
+		line-height: 65rpx;
+	}
+	
+	.btnBox{
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		z-index: 999;
+	}
+	.btn{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 20px;
+	}
+	.backBtn{
+		margin: 0 auto;
+		width: 510rpx;
+		height: 60rpx;
+		line-height: 60rpx;
+		font-size: 36rpx;
+		color: #fff;
+		background-color: #5a9af7;
+	}

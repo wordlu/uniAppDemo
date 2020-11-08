@@ -1,0 +1,404 @@
+// 对 uni-app 进行全局配置
+{
+	"pages": [
+		{
+			"path": "pages/login/index",
+			"style": {}
+		},
+		{
+			"path": "pages/index/index",
+			// "style": {
+			// 	"navigationStyle":"custom"
+			// }
+			"style" : {  
+				"navigationBarTitleText" : "xx移动平台",  
+				"app-plus" : {  
+					"titleNView" : {  
+						"buttons" : [  
+							//显示小红点
+							{  
+								"text": "\ue63e",
+								"fontSrc": "/static/img/xiaoxi.ttf",
+								"fontSize" : "24",  
+								"redDot" : true  
+							}
+							//显示消息条数
+							// {  
+							// 	"text": "\ue534",  
+							// 	"fontSrc": "/static/uni.ttf",  
+							// 	"fontSize": "22px",   
+							// 	"badgeText" : "12"  
+							// }  
+						]  
+					}  
+				}  
+			}  
+		},
+		{
+			"path": "pages/reim/index",
+			"style": {
+				"navigationBarTitleText": "单据填报",
+				"navigationBarBackgroundColor": "#5c97f7",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/mine/index",
+			"style": {
+				"navigationBarTitleText": "个人中心",
+				"navigationBarBackgroundColor": "#5c97f7",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/remind/index",
+			"style": {
+				"navigationBarTitleText":"通知公告",
+				"navigationBarBackgroundColor": "#5a9af7",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/remind/form",
+			"style": {
+				"navigationBarTitleText":"通知公告",
+				"navigationBarBackgroundColor": "#5a9af7",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+            "path" : "components/uni-bh-unRead/uni-bh-unRead", //通知公告-未读消息
+            "style" : {}
+        },
+		{
+            "path" : "components/uni-bh-haveRead/uni-bh-haveRead", //通知公告-已读消息
+            "style" : {}
+        },
+		{
+			"path": "pages/approval/index",//审批任务
+			"style": {
+				"navigationBarTitleText":"审批任务",
+				"navigationBarBackgroundColor": "#5a9af7",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+		    "path" : "components/uni-bh-search/uni-bh-search", //审批任务-导航搜索
+		    "style" : {}
+		},
+		{
+		    "path" : "components/uni-bh-approvaling/uni-bh-approvaling", //审批任务-待审批
+		    "style" : {}
+		},
+		{
+		    "path" : "components/uni-bh-approved/uni-bh-approved", //审批任务-已审批
+		    "style" : {}
+		},
+		{
+		    "path" : "components/uni-bh-approvalReturned/uni-bh-approvalReturned", //审批任务-已退回
+		    "style" : {}
+		},
+		{
+			"path": "pages/approval/approveComments",//审批任务
+			"style": {
+				"navigationBarTitleText":"审批意见",
+				"navigationBarBackgroundColor": "#5a9af7",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/approval/approveProcess",//审批任务
+			"style": {
+				"navigationBarTitleText":"流程查看",
+				"navigationBarBackgroundColor": "#5a9af7",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/myBill/index",//我的单据
+			"style": {
+				"navigationBarTitleText":"我的单据",
+				"navigationBarBackgroundColor": "#5a9af7",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+		    "path" : "components/uni-bh-toSubmit/uni-bh-toSubmit", //我的单据-待提交
+		    "style" : {}
+		},
+		{
+		    "path" : "components/uni-bh-toApprovaling/uni-bh-toApprovaling", //我的单据-审批中
+		    "style" : {}
+		},
+		{
+		    "path" : "components/uni-bh-toApproved/uni-bh-toApproved", //我的单据-审批完成
+		    "style" : {}
+		},
+		{
+		    "path" : "components/uni-bh-uploadFile/uni-bh-uploadFile", //附件上传
+		    "style" : {}
+		},
+		{
+		    "path" : "components/uni-bh-payprojectName/uni-bh-payprojectName", //支出项目弹框
+		    "style" : {}
+		},
+		{
+			"path": "pages/mine/mineInfo",
+			"style": {
+				"navigationBarTitleText":"个人信息",
+				"app-plus" : {
+					"titleNView" : {  
+						"buttons" : [  
+							{  
+								"text": "修改",
+								"fontSize" : "16",
+								"color" : "blue"
+							}
+							
+						]  
+					}  
+				}
+			}
+		},
+		{
+			"path": "pages/trade/tradeMore", //商旅更多
+			"style": {
+				"navigationBarTitleText":"商旅外接",
+				"navigationBarBackgroundColor": "#5a9af7",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/asset/index",
+			"style": {
+				"navigationBarTitleText": "移动盘点",
+				"navigationBarBackgroundColor": "#5a9af7",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/asset/detail",
+			"style": {
+				"navigationBarTitleText": "盘点结果详情",
+				"navigationBarBackgroundColor": "#5a9af7",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/asset/list",
+			"style": {
+				"navigationBarTitleText": "已盘点资产",
+				"navigationBarBackgroundColor": "#5a9af7",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/mine/mineInfoChange",
+			"style": {
+				"navigationBarTitleText":"个人信息",
+				"app-plus" : {
+					"titleNView" : {  
+						"buttons" : [  
+							{  
+								"text": "保存",
+								"fontSize" : "16",
+								"color" : "blue"
+							}
+							
+						]  
+					}  
+				}
+			}
+		},
+		{
+			"path": "pages/reim/reimRequiser/reimRequiser",
+			"style": {
+				"navigationBarTitleText": "请款单",
+				"app-plus" : {
+					"titleNView" : {  
+						"buttons" : [  
+							{  
+								"text" : "保存",  
+								"fontSize" : "16",
+								"color" : "blue"
+							},
+							  {
+								"text" : "暂存",  
+								"fontSize" : "16",
+								"color" : "blue"
+							  } 
+						]  
+					}  
+				} 
+			}
+		},
+		{
+			"path": "pages/reim/priorApproval/priorApproval",
+			"style": {
+				"navigationBarTitleText": "事前审批单",
+				"app-plus" : {
+					"titleNView" : {  
+						"buttons" : [  
+							{  
+								"text" : "保存",  
+								"fontSize" : "16",
+								"color" : "blue"
+							},
+							  {
+								"text" : "暂存",  
+								"fontSize" : "16",
+								"color" : "blue"
+							  } 
+						]  
+					}  
+				} 
+			}
+		},
+		{
+			"path": "pages/reim/costExpense/costExpense",
+			"style": {
+				"navigationBarTitleText": "费用报销单",
+				"app-plus" : {
+					"titleNView" : {  
+						"buttons" : [  
+							{  
+								"text" : "保存",  
+								"fontSize" : "16",
+								"color" : "blue"
+							},
+							  {
+								"text" : "暂存",  
+								"fontSize" : "16",
+								"color" : "blue"
+							  } 
+						]  
+					}  
+				} 
+			}
+		},
+		//填报muwenyuan--beihai
+		{
+			"path": "pages/reim/receptionApply/receptionApply",
+			"style": {
+				"navigationBarTitleText": "公务接待申请单",
+				"app-plus" : {
+					"titleNView" : {  
+						"buttons" : [  
+							{  
+								"text" : "保存",  
+								"fontSize" : "16",
+								"color" : "blue"
+							},
+							  {
+								"text" : "暂存",  
+								"fontSize" : "16",
+								"color" : "blue"
+							  } 
+						]  
+					}  
+				} 
+			}
+		},
+		{
+			"path": "pages/reim/receptionExpense/receptionExpense",
+			"style": {
+				"navigationBarTitleText": "业务招待报销单",
+				"app-plus" : {
+					"titleNView" : {  
+						"buttons" : [  
+							{  
+								"text" : "保存",  
+								"fontSize" : "16",
+								"color" : "blue"
+							},
+							  {
+								"text" : "暂存",  
+								"fontSize" : "16",
+								"color" : "blue"
+							  } 
+						]  
+					}  
+				} 
+			}
+		},
+		{
+			"path": "pages/reim/travelApply/travelApply",
+			"style": {
+				"navigationBarTitleText": "出差申请单",
+				"app-plus" : {
+					"titleNView" : {  
+						"buttons" : [  
+							{  
+								"text" : "保存",  
+								"fontSize" : "16",
+								"color" : "blue"
+							},
+							  {
+								"text" : "暂存",  
+								"fontSize" : "16",
+								"color" : "blue"
+							  } 
+						]  
+					}  
+				} 
+			}
+		},
+		{
+			"path": "pages/reim/travelExpense/travelExpense",
+			"style": {
+				"navigationBarTitleText": "差旅报销单",
+				"app-plus" : {
+					"titleNView" : {  
+						"buttons" : [  
+							{  
+								"text" : "保存",  
+								"fontSize" : "16",
+								"color" : "blue"
+							},
+							  {
+								"text" : "暂存",  
+								"fontSize" : "16",
+								"color" : "blue"
+							  } 
+						]  
+					}  
+				} 
+			}
+		}
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "xx移动平台",
+		"navigationBarBackgroundColor": "#F7F7F7",
+		"backgroundColor": "#FFFFFF",
+		"backgroundColorTop":"#FFFFFF",
+		//去掉默认导航
+		// "navigationStyle": "custom",
+		// "app-plus": {  
+		// 	"titleNView": false  
+		// },
+		// 取消APP端iOS回弹,避免与下拉刷新冲突
+		// "app-plus":{"bounce" : "none"}, 
+		// 取消支付宝和钉钉小程序的iOS回弹,避免与下拉刷新冲突
+		"mp-alipay":{"allowsBounceVertical":"NO"} 
+	},
+	"tabBar": {
+		"color": "black",
+		"selectedColor": "#49aee3",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "static/img/homeDefault.png",
+				"selectedIconPath": "static/img/homeSelected.png"
+			},
+			{
+				"pagePath": "pages/mine/index",
+				"text": "我的",
+				"iconPath": "static/img/pcIconDefault.png",
+				"selectedIconPath": "static/img/pcIconSelected.png"
+			}
+		]
+	}
+}

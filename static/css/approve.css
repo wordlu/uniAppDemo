@@ -1,0 +1,89 @@
+	.container{
+		min-height: 100vh;
+		/* padding-top: 10px; */
+	}
+	.itemList{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.itemBox{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 90vw;
+		height: 140rpx;
+		background-color: #fff;
+		margin-bottom: 15px;
+		border-radius: 6px;
+		box-shadow: 3px 4px 2px  rgba(139, 132, 132, 0.4);
+		font-size: 32rpx;
+		line-height: 50rpx;
+	}
+	.item{
+		display: flex;
+		/* flex: 1; */
+		margin-left: 12rpx;
+		justify-content: space-around;
+		align-items: center;
+		width: 80vw;
+	}
+	.info{
+		display: flex;
+		flex-direction: column;
+	}
+	.infoItem{
+		display: flex;
+		flex-direction: row;
+	}
+	.infoOperator{
+		font-size: 30rpx;
+	}
+	.pedding,.price{
+		color: #ee9e01;
+	}
+	.pedding{
+		text-align: center;
+	}
+	.no_more_data{
+		
+		font-size: 16px;
+		color: #949292;
+		text-align: center;
+	}
+	.approveBtn{
+		width: 90%;
+		margin-top: 20px;
+		background-color: #599af6;
+	}
+	
+	.billType{
+		min-width: 78px;
+		max-width:120rpx;
+		margin-left: 26rpx;
+		/* 超出显示省略号 */
+		overflow: hidden;
+		text-overflow:ellipsis;
+		white-space: nowrap;
+	}
+	
+	.billCode{
+		/* width: 250rpx; */
+	}
+	.moneyBox{
+		position: relative;
+		top: -26rpx;
+	}
+	.price{
+		position: absolute;
+		right: 2rpx; 
+		/* min-width: 162rpx; */
+	}
+	.more{
+		margin-right: 4px
+	}
+	.more image{
+		width:26rpx;
+		height: 42rpx;
+	}
